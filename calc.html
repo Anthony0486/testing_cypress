@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AddingNumbers - DaisyUI</title>
+</head>
+
+<body class="min-h-screen bg-base-200">
+    <div class="navbar bg-base-100 shadow-md px-4 md:px-8">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl normal-case" href="/index.html">Jefff.test</a>
+        </div>
+        <div class="flex-none">
+            <ul class="menu menu-horizontal px-1 gap-2">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="calc.html" class="active">Calc</a></li>
+                <li><a href="api.html">API</a></li>
+                <li><a class="disabled opacity-50 pointer-events-none">Disabled</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="flex flex-col items-center justify-center p-4 mt-10">
+        <div class="card w-full max-w-lg bg-base-100 shadow-2xl">
+            <div class="card-body items-center text-center">
+                <h1 class="card-title text-3xl font-bold mb-6 text-primary">AddingNumbersJS</h1>
+                
+                <div class="form-control w-full gap-4">
+                    <div class="join w-full justify-center">
+                        <input type="number" 
+                               id="firstNumber" 
+                               placeholder="Nombre 1" 
+                               class="input input-bordered join-item w-full focus:input-primary" />
+                        
+                        <button class="btn btn-active join-item no-animation cursor-default text-xl">+</button>
+                        
+                        <input type="number" 
+                               id="secondNumber" 
+                               placeholder="Nombre 2" 
+                               class="input input-bordered join-item w-full focus:input-primary" />
+                    </div>
+
+                    <button id="calculBtn" class="btn btn-primary btn-block text-lg mt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                        Calculer
+                    </button>
+                </div>
+
+                <div class="stats shadow mt-8 bg-secondary text-secondary-content w-full">
+                    <div class="stat">
+                        <div class="stat-title text-secondary-content/70">Résultat final</div>
+                        <div id="result" class="stat-value">--</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="/src/calc.js"></script>
+</body>
+</html>

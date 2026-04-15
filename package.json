@@ -1,0 +1,21 @@
+{
+  "name": "test-center-app",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "cypress:open": "cypress open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.0.4"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "cypress": "^15.13.1",
+    "daisyui": "^5.5.19",
+    "tailwindcss": "^4.2.2"
+  }
+}
