@@ -1,0 +1,24 @@
+{
+  "validUser": {
+    "fullName": "Alice Larue",
+    "email": "alice.larue@test.fr",
+    "subscription": "student",
+    "birthDate": "1995-05-15",
+    "newsletter": true
+  },
+    "standardUser": {
+    "firstName": "Xavier",
+    "lastName":"Dupont De liguonnès",
+    "email": "xav_en_cavale@test.fr",
+    "password" :"123",
+    "subscription": "student",
+    "birthDate": "1995-05-15",
+    "newsletter": true
+  },
+  "minimalUser": {
+    "fullName": "Bob",
+    "email": "bob@test.com",
+    "subscription": "adult",
+    "newsletter": false
+  }
+}
