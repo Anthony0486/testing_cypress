@@ -28,6 +28,6 @@ describe('Tests de l\'application Counter - Vite', () => {
         cy.get('.flex-1 > a').click();
     } )
     it("Verifier que les hover fonctionnent dans la navbar", () => {
-        cy.get('.navbar > li').trigger('mouseover').should('have.css', 'background-color');
+      cy.get('.navbar li').first().trigger('mouseover').should('have.css', 'background-color');
     })
 });
